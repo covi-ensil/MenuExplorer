@@ -26,7 +26,7 @@ function App() {
     lineHeight: 1.5,
   };
 
-  const [menu, setMenu] = useState("?")
+  const [menu, setMenu] = useState("몰?루")
 
   const RandomMenu = () => {
     let RandomINdex = getRandomIndex(Object.keys(Menus).length)
