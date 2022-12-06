@@ -1,44 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import { FcSearch } from 'react-icons/fc';
+import Menus from './jjongjjongFavoriteMenus.json'
+import { useState } from 'react';
 
 function App() {
-  const jjongjjongFavoriteMenus = [
-    '김치찌개',
-    '곱창구이',
-    '짜장면',
-    '지코바치밥',
-    '삼겹살',
-    '떡볶이',
-    '곱창전골',
-    '찜닭',
-    '마라탕',
-    '간장계란밥',
-    '닭볶음탕',
-    '짬뽕',
-    '족발',
-    '감자탕',
-    '라멘',
-    '마라상궈',
-    '쪽갈비',
-    '빈대떡',
-    '일식 돈까스',
-    '쭈꾸미',
-    '오리고기',
-    '탕수육',
-    '훠궈',
-    '닭발',
-    '보쌈',
-    '낚곱새',
-    '장어',
-    '회',
-    '월남쌈',
-    '조개구이',
-    '초밥(스시)',
-    '똠양꿍',
-    '양념갈비',
-    '양념게장 or 간장게장',
-  ];
 
   // console.log(jjongjjongFavoriteMenus.length)
 
@@ -48,8 +14,6 @@ function App() {
   const getRandomIndex = (length) => {
     return parseInt(Math.random() * length);
   };
-
-  // console.log(getRandomIndex(jjongjjongFavoriteMenus.length));
 
   const btnStyle = {
     color: 'white',
@@ -62,6 +26,14 @@ function App() {
     lineHeight: 1.5,
   };
 
+  const [menu, setMenu] = useState("?")
+
+  const RandomMenu = () => {
+    let RandomINdex = getRandomIndex(Object.keys(Menus).length)
+    let MenuList = Object.keys(Menus)
+    setMenu(menu => MenuList[RandomINdex] )
+  }
+
   return (
     <div className='App'>
       <header className='App-header'>
@@ -69,15 +41,15 @@ function App() {
         <p>Dr. JjongJjong's Menu Big Data</p>
         <span>
           오늘의 저녁 메뉴는?
-          <button onClick={() => window.location.reload()} type='reset' style={btnStyle}>
+          {/* <button onClick={() => window.location.reload()} type='reset' style={btnStyle}> */}
+          <button onClick={() => RandomMenu()} style={btnStyle}>
             <FcSearch />
           </button>{' '}
         </span>
         <div>
           {' ✨ ' +
-            jjongjjongFavoriteMenus[
-              getRandomIndex(jjongjjongFavoriteMenus.length)
-            ] +
+            menu
+             +
             ' ✨'}
         </div>
       </header>
