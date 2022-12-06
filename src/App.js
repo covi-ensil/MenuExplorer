@@ -6,8 +6,6 @@ import { useState } from 'react';
 
 function App() {
 
-  // console.log(jjongjjongFavoriteMenus.length)
-
   // 0 < Math.random() <1
   // 여기서 데이터의 길이만큼 곱한 후 parseInt로 정수화시키면 해당 데이터의 길이를 넘지않는 랜덤한 수를 구할 수 있음!
 
@@ -41,7 +39,6 @@ function App() {
         <p>Dr. JjongJjong's Menu Big Data</p>
         <span>
           오늘의 저녁 메뉴는?
-          {/* <button onClick={() => window.location.reload()} type='reset' style={btnStyle}> */}
           <button onClick={() => RandomMenu()} style={btnStyle}>
             <FcSearch />
           </button>{' '}
