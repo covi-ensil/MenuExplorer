@@ -1,11 +1,12 @@
 # Dr. JjongJjong's Menu Big Data APP
 
+# About
 랜덤 저녁 메뉴를 정해주는 어플입니다.
 
-## Function
+## Feature
 - 검색버튼 클릭 시 랜덤 저녁 메뉴를 추천
 
-## 추가 예정 기능
+## Features to be implemented
 - 랜덤 추억 사진 추가
 - 랜덤 저녁 메뉴에 대응하는 대표이미지 추가
 - 랜덤 저녁 메뉴에 대응하는 설명글 추가
