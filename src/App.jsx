@@ -3,6 +3,7 @@ import Menus from './jjongjjongFavoriteMenus.json';
 import { useState } from 'react';
 import logo from './images/considering.gif';
 import food from './logo.svg';
+import Clock from './components/Clock';
 
 function App() {
   const [menu, setMenu] = useState('몰?루');
@@ -32,6 +33,9 @@ function App() {
 
   return (
     <div className=' w-full h-screen bg-white'>
+              <div className=' m'>
+          <Clock />
+        </div>
       <div className='flex flex-col justify-center items-center w-full h-full gap-4'>
         <h1 className='text-xl md:text-3xl'>Dr. JjongJjong's Menu Big Data</h1>
         <div className='px-12'>
