@@ -4,6 +4,7 @@ import { useState } from 'react';
 import logo from './images/considering.gif';
 import food from './logo.svg';
 import Clock from './components/Clock';
+import Coviplayer from './components/Coviplayer';
 
 function App() {
   const [menu, setMenu] = useState('몰?루');
@@ -50,6 +51,7 @@ function App() {
         </span>
         <div>{' ✨ ' + menu + ' ✨'}</div>
         <img src={food} className=' w-64' alt='logo' />
+        <Coviplayer />
       </div>
     </div>
   );

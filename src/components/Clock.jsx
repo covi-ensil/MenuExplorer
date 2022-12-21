@@ -4,7 +4,7 @@ function Clock() {
   const [date, setDate] = useState(new Date());
 
   useEffect(() => {
-    const timerID = setInterval(() => tick(), 1000);
+    const timerID = setInterval(() => tick(), 500);
     return () => {
       clearInterval(timerID);
     };
