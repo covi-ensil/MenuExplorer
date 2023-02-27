@@ -2,9 +2,9 @@ import { FcSearch } from 'react-icons/fc';
 import Menus from './jjongjjongFavoriteMenus.json';
 import { useState } from 'react';
 import logo from './images/considering.gif';
+import video from './images/snow.mp4'
 import food from './logo.svg';
 import Clock from './components/Clock';
-import Coviplayer from './components/Coviplayer';
 
 function App() {
   const [menu, setMenu] = useState('몰?루');
@@ -50,8 +50,6 @@ function App() {
           </button>{' '}
         </span>
         <div>{' ✨ ' + menu + ' ✨'}</div>
-        <img src={food} className=' w-64' alt='logo' />
-        <Coviplayer />
       </div>
     </div>
   );
