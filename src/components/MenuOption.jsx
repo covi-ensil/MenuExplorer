@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 
-export default function MenuOption({selectedMenu, handleMenuSelect}) {
+export default function MenuOption({selectedMode, handleModeSelect}) {
 
     return (
         <div>
-            <select onChange={handleMenuSelect} id='menu-select'>
+            <select onChange={handleModeSelect} id='menu-select'>
                 <option value='선택된 모드가 없습니다'>
                     {' '}
                     모드를 선택해 주세요{' '}
