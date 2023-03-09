@@ -36,7 +36,7 @@ function App() {
     };
 
     return (
-        <div className='w-full h-screen bg-white'>
+        <div className='w-full pb-20 bg-white'>
             <div className='m'>
                 <Clock />
             </div>
@@ -61,7 +61,15 @@ function App() {
                     ></img>
                 </div>
                 {selectedMode === '선택된 모드가 없습니다' ? (
-                    ''
+                                        <div>
+                                        <span className='text-blue-500'>
+                                            선택된 모드가 없습니다
+                                            <button style={btnStyle}>
+                                                <FcSearch />
+                                            </button>
+                                        </span>
+                                        <div>어떤 메뉴를 먹어야 잘 먹었다고 소문이 날까</div>
+                                    </div>
                 ) : (
                     <div>
                         <span className='text-blue-500'>
