@@ -1,7 +1,6 @@
 import { FcSearch } from 'react-icons/fc';
 import { useState } from 'react';
 import logo from './images/considering.gif';
-import video from './images/snow.mp4';
 import Clock from './components/Clock';
 import Menus from './datas/jjongjjongFavoriteMenus.json';
 import top69Menus from './datas/jjongjjongFavoriteMenus.json';
@@ -36,7 +35,7 @@ function App() {
     };
 
     return (
-        <div className='w-full pb-20 bg-white'>
+        <div className='w-full h-screen bg-white'>
             <div className='m'>
                 <Clock />
             </div>

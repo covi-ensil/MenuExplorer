@@ -1,6 +1,6 @@
 {
   "name": "dr.jjongjjong",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -41,6 +41,7 @@
     ]
   },
   "devDependencies": {
-    "jsdoc": "^4.0.0"
+    "jsdoc": "^4.0.0",
+    "serve": "^14.2.0"
   }
 }
