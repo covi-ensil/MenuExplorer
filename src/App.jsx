@@ -1,7 +1,6 @@
 import { FcSearch } from 'react-icons/fc';
 import { useState } from 'react';
 import logo from './images/considering.gif';
-import video from './images/snow.mp4';
 import Clock from './components/Clock';
 import Menus from './datas/jjongjjongFavoriteMenus.json';
 import top69Menus from './datas/jjongjjongFavoriteMenus.json';
@@ -9,11 +8,10 @@ import MenuOption from './components/MenuOption';
 
 function App() {
     const [menu, setMenu] = useState('몰?루');
-    const [selectedMode, setSelectedMode] = useState('');
-    const [selectedMenu, setSelectedMenu] = useState('선택된 모드가 없습니다');
+    const [selectedMode, setSelectedMode] = useState('선택된 모드가 없습니다');
 
-    function handleMenuSelect(event) {
-        setSelectedMenu(event.target.value);
+    function handleModeSelect(event) {
+        setSelectedMode(event.target.value);
     }
 
     // Refactor getRandomIndex to a one-liner function
@@ -42,14 +40,13 @@ function App() {
                 <Clock />
             </div>
             <div className='mx-auto text-right pr-12 text-sm'>
-                {selectedMenu === '선택된 모드가 없습니다' ? (
-                    <p className='py-1'>🕹️ : </p>
-                ) : (
-                    <p className='py-1'> 🕹️ : {selectedMenu}</p>
-                )}
+                <p className='py-1'> 🕹️ : {selectedMode}</p>
             </div>
             <div className='flex flex-col justify-center items-center w-full pt-12'>
-                <MenuOption selectedMenu={selectedMenu} handleMenuSelect={handleMenuSelect} />
+                <MenuOption
+                    selectedMenu={selectedMode}
+                    handleModeSelect={handleModeSelect}
+                />
             </div>
             <div className='flex flex-col justify-center items-center w-full h-[40%] gap-4'>
                 <h1 className='text-xl md:text-3xl'>
@@ -62,13 +59,27 @@ function App() {
                         alt='considering...'
                     ></img>
                 </div>
-                <span className='text-blue-500'>
-                    오늘의 저녁 메뉴는?
-                    <button onClick={handleRandomMenu} style={btnStyle}>
-                        <FcSearch />
-                    </button>
-                </span>
-                <div>{`✨ ${menu} ✨`}</div>
+                {selectedMode === '선택된 모드가 없습니다' ? (
+                                        <div>
+                                        <span className='text-blue-500'>
+                                            선택된 모드가 없습니다
+                                            <button style={btnStyle}>
+                                                <FcSearch />
+                                            </button>
+                                        </span>
+                                        <div>어떤 메뉴를 먹어야 잘 먹었다고 소문이 날까</div>
+                                    </div>
+                ) : (
+                    <div>
+                        <span className='text-blue-500'>
+                            오늘의 저녁 메뉴는?
+                            <button onClick={handleRandomMenu} style={btnStyle}>
+                                <FcSearch />
+                            </button>
+                        </span>
+                        <div>{`✨ ${menu} ✨`}</div>
+                    </div>
+                )}
             </div>
         </div>
     );
