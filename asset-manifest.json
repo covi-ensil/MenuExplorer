@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/MenuExplorer/static/css/main.c8fd4f49.css",
+    "main.js": "/MenuExplorer/static/js/main.2cfdfa76.js",
+    "static/media/considering.gif": "/MenuExplorer/static/media/considering.aaac962048f8a2cb88da.gif",
+    "index.html": "/MenuExplorer/index.html",
+    "main.c8fd4f49.css.map": "/MenuExplorer/static/css/main.c8fd4f49.css.map",
+    "main.2cfdfa76.js.map": "/MenuExplorer/static/js/main.2cfdfa76.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c8fd4f49.css",
+    "static/js/main.2cfdfa76.js"
+  ]
+}
