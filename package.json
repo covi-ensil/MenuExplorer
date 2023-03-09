@@ -1,6 +1,7 @@
 {
   "name": "dr.jjongjjong",
   "version": "0.2.0",
+  "homepage": "https://ensillee.github.io/MenuExplorer",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
