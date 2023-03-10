@@ -3,13 +3,23 @@
     <head>
         <meta charset="utf-8" />
         <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        />
         <meta name="theme-color" content="#000000" />
         <meta
             name="description"
             content="Web site created using create-react-app"
         />
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+        <script async src="http://html5sdk-dev.covi.co.kr/covi-html5-Integration/covi-html5-player/dist/coviplayer.integration.js"></script>
+        <script >
+            console.log('-----바벨+웹팩 적용 개발 버전입니다-----');
+            var CoviDmpUid = '';
+            var CoviOaid = '';
+            var coviplayer;
+        </script>
         <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -42,12 +52,6 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
 
-        <script src="http://html5sdk-dev.covi.co.kr/covi-html5-Integration/covi-html5-player/dist/coviplayer.integration.js"></script>
-        <script>
-            console.log('-----바벨+웹팩 적용 개발 버전입니다-----');
-            var CoviDmpUid = '';
-            var CoviOaid = '';
-            var coviplayer;
-        </script>
+
     </body>
 </html>
