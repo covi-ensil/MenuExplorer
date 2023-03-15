@@ -76,7 +76,7 @@ function App() {
                 </h1>
                 <div className='px-12'>
                     <img
-                        className='rounded-2xl w-96 max-w-lg'
+                        className='rounded-2xl w-72 max-w-lg'
                         src={logo}
                         alt='considering...'
                     ></img>
