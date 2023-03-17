@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import defaultImg from '../images/riceJokeBear.png';
 
-export default function MenuOption({selectedMode, handleModeSelect}) {
-
+export default function MenuOption({ handleModeSelect }) {
+    
     return (
         <div>
             <select onChange={handleModeSelect} id='menu-select'>

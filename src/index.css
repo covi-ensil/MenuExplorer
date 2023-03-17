@@ -7,3 +7,19 @@
 .test{
     height: 300px;
 }
+
+.title{
+    text-align: center;
+    color: chocolate;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.코비{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 288px;
+    max-width: 324px;
+}
