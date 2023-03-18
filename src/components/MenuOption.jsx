@@ -4,7 +4,7 @@ import defaultImg from '../images/riceJokeBear.png';
 export default function MenuOption({ handleModeSelect }) {
     
     return (
-        <div>
+        <div className='pb-8'>
             <select onChange={handleModeSelect} id='menu-select'>
                 <option value='선택된 모드가 없습니다'>
                     {' '}
