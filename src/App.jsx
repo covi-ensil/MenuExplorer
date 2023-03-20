@@ -1,7 +1,8 @@
 import { FcSearch } from 'react-icons/fc';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import logo from './images/considering.webp';
 import defaultImg from './images/riceJokeBear.png';
+import loading from './images/loading.gif';
 import Clock from './components/Clock';
 import jjongjjongMenus from './datas/jjongjjongFavoriteMenus.json';
 import top69Menus from './datas/top69Menus.json';
@@ -11,9 +12,19 @@ import Sidebar from './components/Sidebar';
 function App() {
     const [selectedMode, setSelectedMode] = useState('선택된 모드가 없습니다');
     const [selectedMenu, setSelectedMenu] = useState('몰?루');
+    const [isLoading, setIsLoading] = useState('false');
     const [menuImg, setMenuImg] = useState('');
     const [price, setPrice] = useState('가격');
     const [popularity, setPopularity] = useState('인기도');
+
+    // useEffect(() => {
+    //     setIsLoading(true);
+    //     const timer = setTimeout(() => {
+    //         setIsLoading(false);
+    //         setMenuImg(menuImg);
+    //     }, 1200);
+    //     return () => clearTimeout(timer);
+    // }, [menuImg]);
 
     function handleModeSelect(event) {
         setSelectedMenu('몰?루');
@@ -40,7 +51,7 @@ function App() {
         if (selectedMode === '🕊️') {
             randomIndex = getRandomIndex(Object.keys(jjongjjongMenus).length);
             menuList = Object.keys(jjongjjongMenus);
-            console.log('list :', menuList);
+            // console.log('list :', menuList);
             setSelectedMenu(menuList[randomIndex]);
         }
         if (selectedMode === '🍱') {
@@ -48,7 +59,7 @@ function App() {
             randomIndex = getRandomIndex(Object.keys(top69Menus).length);
             // console.log(randomIndex)
             menuList = Object.keys(top69Menus);
-            console.log('list :', menuList);
+            // console.log('list :', menuList);
 
             setSelectedMenu(menuList[randomIndex]);
 
@@ -64,93 +75,100 @@ function App() {
         }
     };
 
+    // console.log(isLoading)
+
     return (
-        <div className="flex flex-col items-center w-full h-[100vh] bg-white ">
-            <div className="w-full flex justify-between items-end max-w-screen-sm xl:max-w-screen-xl pr-4 bg-blue-400 py-2">
-            <h1 className='text-white pl-4'>Dr.JJ's Random Menu</h1>
+        <div className='flex flex-col items-center w-full h-[100vh] bg-white '>
+            <div className='w-full flex justify-between items-end max-w-screen-lg xl:max-w-screen-2xl pr-4 bg-blue-400 py-2'>
+                <h1 className='text-white pl-4'>Dr.JJ's Random Menu</h1>
                 <Sidebar />
             </div>
-            <div className=" w-full max-w-screen-sm xl:max-w-screen-xl">
-                <div className="mx-auto max-w-screen-sm w-full xl:max-w-screen-xl">
+            <div className=' w-full max-w-screen-lg xl:max-w-screen-2xl'>
+                <div className='mx-auto max-w-screen-lg w-full xl:max-w-screen-2xl'>
                     <Clock />
                 </div>
-                <div className="mx-auto text-right pr-4 text-sm max-w-screen-sm xl:max-w-screen-xl">
-                    <p className="py-1"> 🕹️ : {selectedMode}</p>
+                <div className='mx-auto text-right pr-4 text-sm max-w-screen-lg xl:max-w-screen-2xl'>
+                    <p className='py-1'> 🕹️ : {selectedMode}</p>
                 </div>
-                <div className="flex flex-col justify-center items-center w-full py-12">
+                <div className='flex flex-col justify-center items-center w-full py-12'>
                     <MenuOption handleModeSelect={handleModeSelect} />
                 </div>
-                <div className="flex flex-col justify-center items-center w-full h-[60%] gap-4 max-w-screen-sm xl:max-w-screen-xl">
-                    <div className="px-12">
+                <div className='flex flex-col justify-center items-center w-full h-[60%] gap-4 max-w-screen-lg xl:max-w-screen-2xl'>
+                    <div className='px-12'>
                         <img
-                            className="rounded-2xl w-72 max-w-lg"
+                            className='rounded-2xl w-72 max-w-lg'
                             src={logo}
-                            alt="considering..."
+                            alt='considering...'
                         ></img>
                     </div>
                     {selectedMode === '선택된 모드가 없습니다' ? (
-                        <div className="flex flex-col">
-                            <span className="text-center text-blue-500">
+                        <div className='flex flex-col'>
+                            <span className='text-center text-blue-500'>
                                 선택된 모드가 없습니다
                                 <button style={btnStyle}>
-                                    <FcSearch className="w-6 h-6" />
+                                    <FcSearch className='w-6 h-6' />
                                 </button>
                             </span>
                             <div> 🥺 모드를 선택해 주세요 🥺 </div>
                         </div>
                     ) : selectedMode === '🕊️' ? (
-                        <div className="flex flex-col w-full">
-                            <span className="text-center text-blue-500">
+                        <div className='flex flex-col w-full'>
+                            <span className='text-center text-blue-500'>
                                 오늘의 쫑이 메뉴는?
                                 <button
                                     onClick={handleRandomMenu}
                                     style={btnStyle}
                                 >
-                                    <FcSearch className="w-6 h-6" />
+                                    <FcSearch className='w-6 h-6' />
                                 </button>
                             </span>
-                            <div className="text-center py-4">{`✨ ${selectedMenu} ✨`}</div>
+                            <div className='text-center py-4'>{`✨ ${selectedMenu} ✨`}</div>
                             {menuImg === defaultImg ? (
                                 <img
-                                    className="mx-auto w-56 h-60 max-w-xs rounded-lg"
+                                    className='mx-auto w-56 h-60 max-w-xs rounded-lg'
                                     src={menuImg}
-                                    alt="menuImg"
+                                    alt='menuImg'
                                 />
+                            ) : isLoading ? (
+                                <img src={loading} alt='loading' />
                             ) : (
                                 <img
-                                    className="mx-auto pt-4 w-72 h-52 max-w-xs max-h-52 rounded-lg"
+                                    className='mx-auto pt-4 w-72 h-52 max-w-xs max-h-52 rounded-lg'
                                     src={menuImg}
-                                    alt="menuImg"
+                                    alt='menuImg'
                                 />
                             )}
                         </div>
                     ) : (
-                        <div className="flex flex-col w-full">
-                            <span className="text-center text-blue-500">
+                        <div className='flex flex-col w-full'>
+                            <span className='text-center text-blue-500'>
                                 오늘의 저녁 인기 메뉴는?
                                 <button
                                     onClick={handleRandomMenu}
                                     style={btnStyle}
                                 >
-                                    <FcSearch className="w-6 h-6" />
+                                    <FcSearch className='w-6 h-6' />
                                 </button>
                             </span>
-                            <div className="text-center  py-4">{`✨ ${selectedMenu} ✨`}</div>
-                            {menuImg === defaultImg ? (
-                                <img
-                                    className="mx-auto w-56 h-60 max-w-xs rounded-lg"
-                                    src={menuImg}
-                                    alt="menuImg"
-                                />
-                            ) : (
-                                <img
-                                    className="mx-auto pt-4 w-72 h-52 max-w-xs max-h-52 rounded-lg"
-                                    src={menuImg}
-                                    alt="menuImg"
-                                />
-                            )}
-                            {/* <div className='text-center'>{`✨ 가격 : ${price} ✨`}</div>
+
+                            <div className='content'>
+                                <div className='text-center  py-4'>{`✨ ${selectedMenu} ✨`}</div>
+                                {menuImg === defaultImg ? (
+                                    <img
+                                        className='mx-auto w-56 h-60 max-w-xs rounded-lg'
+                                        src={menuImg}
+                                        alt='menuImg'
+                                    />
+                                ) : (
+                                    <img
+                                        className='mx-auto pt-4 w-72 h-52 max-w-xs max-h-52 rounded-lg'
+                                        src={menuImg}
+                                        alt='menuImg'
+                                    />
+                                )}
+                                {/* <div className='text-center'>{`✨ 가격 : ${price} ✨`}</div>
                         <div className='text-center'>{`✨ 인기도 : ${popularity} ✨`}</div> */}
+                            </div>
                         </div>
                     )}
                 </div>
