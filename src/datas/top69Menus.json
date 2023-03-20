@@ -15,7 +15,7 @@
         "사진": "https://i.namu.wiki/i/3D066RZNEIZQVPpLeot_Ri_S3wwhgNCDXsw3bfiP6AOPM6LsKYDrHRkHEO_kg10YoPIVzB6gobunKWCzzh2Vly-HKujLh8cgfUmMKLZH9BkRr7CPXwdrgD2ZOdGUEHocPms97as6z-4tEF0JxC_1rQ.webp"
     },
     "초밥": {
-        "가격": "30,000원",
+        "가격": "20,000원",
         "인기도": "5",
         "사진": "https://i.namu.wiki/i/nXbySh4e5Mo_Dq728c6OgaradwodK3gFeDH4OSkuvE-oldCHdAWnbgyD2O3cHRo2OPAHDnZd6On1oiBOs9EV-yF0xQ_4ZgTLjTfioEkXUjzq30VyOrDzKa06Sq_u9sTNOkd3ZoffSlexco05fHi9PA.webp"
     },
@@ -25,7 +25,7 @@
         "사진": "https://i.namu.wiki/i/Jy26BuJURRhLSmHozZzOue4kYZtcjbgR7lSAK0muu06SW_vyEgDv5eRADR_zLVR4agSZGHVyFi-hwiL1ZAdr9KJ1ESuWncaq0UIamWX065s9MmMIIUqBNi68dVUEjp5JkWZC2BXD-_YHBUNJ54G8HA.webp"
     },
     "마라탕": {
-        "가격": "25,000원",
+        "가격": "20,000원",
         "인기도": "5",
         "사진": "https://i.namu.wiki/i/UCwvPzJT1z-fuOjjin2XvgEOarsJllN8G7QpqHJ7_LChl48YrdbguU9TkcDvQ3EfOqR3by_CzlVcLDm5zaFce5fvlrfN-kxmxSEu9ZRPF4xH-_Vv9YgmFntkLMyAxHDcbo2mwuxRyHx-FiLIB_SgNg.webp"
     },
@@ -60,7 +60,7 @@
         "사진": "https://i.namu.wiki/i/RurySM9OEqxq3Xdz--1hsMtczZulxTboyXVdGR_qYbCxPF5rJCNeYdwUWIYi-Ce727P7ZUg4ncayKsYeVX_2h62tKg7xo5YHwsqPe13ufosKl0VraWCgnFecT5seOeA6suRX6Nsu_4fDbFYjbsQysQ.webp"
     },
     "짬뽕": {
-        "가격": "15,000원",
+        "가격": "10,000원",
         "인기도": "3",
         "사진": "https://i.namu.wiki/i/6Enj74CQT5qgls-rjsXVpLSg_QusQp1TNMrxBJouACGue8yJDUtd5t3_GxDArCfvFIN1vM2i0qDkKLGA78nVRMNtYu7ejf6aTsTHwiPNWSrkLZSSdQuAHVkppnvMHY9iBOsimirEgREBh3KkPh9jjQ.webp"
     },
@@ -99,7 +99,7 @@
         "인기도": "3",
         "사진": "https://i.namu.wiki/i/83MoqmJpNtDQsygFJ2IluOZEa0dkqq-IdS5BMpy9U7FDehJLp_03JOVpspi0IDUPekgPVei1lQvVNZovtmwsAQBAlKpA0i8gB8jrt5MAyifV9OeJSobh8TeYnVb76GSF6rpGMpC0FU_b0fznJQWYbg.webp"
     },
-    "통삼겹구이": {
+    "삼겹살": {
         "가격": "30,000원",
         "인기도": "4",
         "사진": "https://i.namu.wiki/i/Qgc47N6ax5WvylgYjRT5zrRP7xrgqLAfrf699iSUwlPQQTp94GpyUFWs8YeDpohgHNnsHwkUkYRzWqxgW3zi3h6s4JJpLInsZD9d6aChkJNf1SeLN4EX2TeV1IBqXTdsGQ3jwJZoiUyPA14GIUYMIg.webp"
@@ -110,7 +110,7 @@
         "사진": "https://i.namu.wiki/i/ij_to_Cej4j9Gz2VT6MiCdL93kPP-oFfVgWdE-yCAzkiIK7KqfG9JuM_q3RizRTtL_X-ldIJuatONj-D-_7qRAvCwoJU9mo6UeHHtcOS-C1WQpFD2rGoLx5kZQVpbIwzNLnCsZa9ro8LvMBs-TmACg.webp"
     },
     "일식돈까스": {
-        "가격": "10,000원",
+        "가격": "12,000원",
         "인기도": "3",
         "사진": "https://i.namu.wiki/i/IQ7CAPGj6rKRu-gEg8faBtghz-dX8bJRIKA4KPyWu80D1B5YoATId-HcOCKrDgqSGfTNoOs3_2vP3Sn4eM-my3mVca2trMB4vjYM6tMj9Ao7HYdnz30c1C_iaRvSjTmlQvWrbB1E2oPy3yXmUQG0mA.webp"
     },
@@ -154,7 +154,7 @@
         "인기도": "4",
         "사진": "https://i.namu.wiki/i/f3uTfgyqAJImNf3GjAOFQWyapCjPMj1UBqjfJGSMlIfYwHV8K6LXEoCpjaH3xUgicXutSHf2a3oJj52bHV13m7OjPkTQUnjnZcCqXR80PvuAOkk-k8j0931aFjAl-JYyyj4upPFsNxFAKOGs8JhHyg.webp"
     },
-    "오리불고기": {
+    "오리고기": {
         "가격": "35,000원",
         "인기도": "4",
         "사진": "https://i.namu.wiki/i/x5XwsCq_9Tir2w7YUhcfOTD5PvLG8KnEzPVZGRhK15T6q9vL_J_S6LEvz-j9C6Lgb5juPow4YzDB8Npe0SU7o9-KW7TmEQtgfVFlHaA30bPU1xkAcBPhi1YM1kpv_DioaXU5_h9GNdo3PVaplcJgQQ.webp"

@@ -1,37 +1,172 @@
- {
-    "김치찌개" : "김치찌개",
-    "곱창구이" : "곱창구이",
-    "짜장면" : "짜장면",
-    "지코바치밥" : "지코바치밥",
-    "삼겹살" : "삼겹살",
-    "떡볶이" : "떡볶이",
-    "곱창전골" : "곱창전골",
-    "찜닭" : "찜닭",
-    "마라탕" : "마라탕",
-    "간장계란밥" : "간장계란밥",
-    "닭볶음탕" : "닭볶음탕",
-    "짬뽕" : "짬뽕",
-    "족발" : "족발",
-    "감자탕" : "감자탕",
-    "라멘" : "라멘",
-    "마라상궈" : "마라상궈",
-    "쪽갈비" : "쪽갈비",
-    "빈대떡" : "빈대떡",
-    "일식 돈까스" : "일식 돈까스",
-    "쭈꾸미" : "쭈꾸미",
-    "오리고기" : "오리고기",
-    "탕수육" : "탕수육",
-    "훠궈" : "훠궈",
-    "닭발" : "닭발",
-    "보쌈" : "보쌈",
-    "낚곱새" : "낚곱새",
-    "장어" : "장어",
-    "회" : "회",
-    "월남쌈" : "월남쌈",
-    "조개구이" : "조개구이",
-    "초밥(스시)" : "초밥(스시)",
-    "똠양꿍" : "똠양꿍",
-    "양념갈비" : "양념갈비",
-    "양념게장 or 간장게장" : "양념게장 or 간장게장"
+{
+    "김치찌개": {
+        "가격": "8,000원",
+        "인기도": "4",
+        "사진": "https://i.namu.wiki/i/C88MRmCqwH1_WFZWBmeGXb5H3B04X-eXcQ5yg4W8psMnrRZoG_wupHI_H8g9llwtZlpKAH0UPNrzmYLkr4AFNAw4R-RC_mNOhNSvSWBqy4mgSs8NkAQvBMQXtFKp1mkMJBzC3GOvACsqAJ4DAkQmzw.webp"
+    },
+    "곱창(대창,막창,염통)": {
+        "가격": "25,000원",
+        "인기도": "4",
+        "사진": "https://i.ytimg.com/vi/usw49vQ8Hjg/maxresdefault.jpg"
+    },
+    "짜장면" : {
+        "가격": "7,000원",
+        "인기도": "4",
+        "사진": "https://i.namu.wiki/i/_y6qeGd7GtODmeHnUrtvGgrT2TzDwgL3vUEG0sYWM9sqejQEbTJmbfZm3FdpD7r5LWtcrl3gzYfNIMiXvFk4tPZ4236_QmB2zn8uUloV0D8yv02tFy-mxSuPJIK0S_0yzKNZ7HYCp0mQTESNtYXuJA.webp"
+    },
+    "지코바치밥" : {
+        "가격": "20,000원",
+        "인기도": "5",
+        "사진": "https://t1.daumcdn.net/cfile/tistory/9996284E5D398F910B"
+    },
+    "삼겹살": {
+        "가격": "30,000원",
+        "인기도": "5",
+        "사진": "https://i.namu.wiki/i/Qgc47N6ax5WvylgYjRT5zrRP7xrgqLAfrf699iSUwlPQQTp94GpyUFWs8YeDpohgHNnsHwkUkYRzWqxgW3zi3h6s4JJpLInsZD9d6aChkJNf1SeLN4EX2TeV1IBqXTdsGQ3jwJZoiUyPA14GIUYMIg.webp"
+    },
+    "떡볶이": {
+        "가격": "8,000원",
+        "인기도": "4",
+        "사진": "https://i.namu.wiki/i/Dt6_vdVAHga1lzNZ-4Zj6RJG30CY5sYUJLeB9l36jtwlKoOy3y4vShIj2dm3jI5pKUguYn_6LExR8DvlJ6ecpkUHh8Il5cTF3QfwZNgeCBStDHLt1G3jK5P6EVShGz2ZkNqgxZGAZIk9VGzHlLP-sA.webp"
+    },
+    "곱창전골": {
+        "가격": "25,000원",
+        "인기도": "4",
+        "사진": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Korean_cuisine-Gobchang_jeongol-01.jpg"
+    },
+    "찜닭" : {
+        "가격": "25,000",
+        "인기도": "4",
+        "사진": "https://i.namu.wiki/i/onIgPmQRCAL2hz8GEd5bVFE2vL7VxsAqNCFkdROTe2gzVlgsRD3u9j8kmnjCVBJs8L-7xDJ8TXWtxX-6Xg8nFUcASifEU6LiMS6aVOtoBO_o53WmswkMNmsS2b0CLEpyPJeZPLsnRyIanXhe8O_qwg.webp"
+    },
+    "마라탕": {
+        "가격": "20,000원",
+        "인기도": "5",
+        "사진": "https://i.namu.wiki/i/UCwvPzJT1z-fuOjjin2XvgEOarsJllN8G7QpqHJ7_LChl48YrdbguU9TkcDvQ3EfOqR3by_CzlVcLDm5zaFce5fvlrfN-kxmxSEu9ZRPF4xH-_Vv9YgmFntkLMyAxHDcbo2mwuxRyHx-FiLIB_SgNg.webp"
+    },
+    "간장계란밥" : {
+        "가격": "3,500원",
+        "인기도": "3",
+        "사진": "https://i.namu.wiki/i/nfnbGYzSy5NBktOJcqfAZPy9k-7ic2rc_T4t_s7RZkrtn5E38xkGKXXUTcrIffhSRxHS0YPx8dS-ihpKo3v07LSQAOLWbychxlZClYTp-OrH5I9evubAlE6Thbge7qfv_X6AsePFktqJuDjxAWlXqg.webp"
+    },
+    "닭볶음탕" : {
+        "가격": "25,000",
+        "인기도": "3",
+        "사진": "https://i.namu.wiki/i/7Vw0Ale9iJP-wfKIZzaMajcg4-k-0-Pn1QuI8u-5GOeEZUV8SlUlxXg9_e3GIAFcqn8F8pkPJHO4dsQaiv7r-91xlG6HJsibGT6GnWv3_SBiPm1fIBoTOfpXTMXUOz0oe7pQSWXXxnHKk_sHc0O7kA.webp"
+    },
+    "짬뽕": {
+        "가격": "10,000원",
+        "인기도": "3",
+        "사진": "https://i.namu.wiki/i/6Enj74CQT5qgls-rjsXVpLSg_QusQp1TNMrxBJouACGue8yJDUtd5t3_GxDArCfvFIN1vM2i0qDkKLGA78nVRMNtYu7ejf6aTsTHwiPNWSrkLZSSdQuAHVkppnvMHY9iBOsimirEgREBh3KkPh9jjQ.webp"
+    },
+    "족발": {
+        "가격": "35,000원",
+        "인기도": "5",
+        "사진": "https://i.namu.wiki/i/RurySM9OEqxq3Xdz--1hsMtczZulxTboyXVdGR_qYbCxPF5rJCNeYdwUWIYi-Ce727P7ZUg4ncayKsYeVX_2h62tKg7xo5YHwsqPe13ufosKl0VraWCgnFecT5seOeA6suRX6Nsu_4fDbFYjbsQysQ.webp"
+    },
+    "감자탕": {
+        "가격": "25,000원",
+        "인기도": "4",
+        "사진": "https://i.namu.wiki/i/S5l6Kvy81dAvzg9y2fxXURPA-Nd-E24vt22kwFxk4HyuqywCGqQdR-2_E6IH-Kde9F6cnZgkKN8mGlyUt7s4ZMAe3Pwr8oAwVGgOYc2LH98fJjHO2LfI7ddakFX_eGGT2t7pa4DPUjVBdhBweky1og.webp"
+    },
+    "라멘": {
+        "가격": "12,000원",
+        "인기도": "3",
+        "사진": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/%EB%8F%88%EC%BD%94%EC%B8%A0%EB%9D%BC%EB%A9%98.jpg/220px-%EB%8F%88%EC%BD%94%EC%B8%A0%EB%9D%BC%EB%A9%98.jpg"
+    },
+    "마라상궈" : {
+        "가격": "25,000",
+        "인기도": "3",
+        "사진": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Ma_La_Xiang_Guo.jpg/220px-Ma_La_Xiang_Guo.jpg"
+    },
+    "쪽갈비" : {
+        "가격": "35,000",
+        "인기도": "3",
+        "사진": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Balinese_Roasted_Pork_Ribs_-_Iga_Babi_Panggang_Bali.JPG/300px-Balinese_Roasted_Pork_Ribs_-_Iga_Babi_Panggang_Bali.JPG"
+    },
+    "빈대떡" : {
+        "가격": "5,000",
+        "인기도": "3",
+        "사진": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Korea_GwangjangMarket_Eats_11_Bindaetteok.jpg/220px-Korea_GwangjangMarket_Eats_11_Bindaetteok.jpg"
+    },
+    "일식돈까스": {
+        "가격": "12,000원",
+        "인기도": "3",
+        "사진": "https://i.namu.wiki/i/IQ7CAPGj6rKRu-gEg8faBtghz-dX8bJRIKA4KPyWu80D1B5YoATId-HcOCKrDgqSGfTNoOs3_2vP3Sn4eM-my3mVca2trMB4vjYM6tMj9Ao7HYdnz30c1C_iaRvSjTmlQvWrbB1E2oPy3yXmUQG0mA.webp"
+    },
+    "쭈꾸미볶음": {
+        "가격": "28,000원",
+        "인기도": "5",
+        "사진": "https://img2.quasarzone.com/editor/2022/11/18/3ae00f6481845565dbc42548db24820c.jpg"
+    },
+    "오리고기": {
+        "가격": "35,000원",
+        "인기도": "4",
+        "사진": "https://i.namu.wiki/i/x5XwsCq_9Tir2w7YUhcfOTD5PvLG8KnEzPVZGRhK15T6q9vL_J_S6LEvz-j9C6Lgb5juPow4YzDB8Npe0SU7o9-KW7TmEQtgfVFlHaA30bPU1xkAcBPhi1YM1kpv_DioaXU5_h9GNdo3PVaplcJgQQ.webp"
+    },
+    "탕수육": {
+        "가격": "25,000원",
+        "인기도": "4",
+        "사진": "https://i.namu.wiki/i/IiX6CR5tZycaaBUmCNnX-1Fwqcs8A8bURigY8pk_dKbhSUyUDoLscUmziryFNGty1zSzn8SswVRs6dJwfFaTx6JNk5sGxz5R4xmAIprNQMSZhSdYbjLI2pWC47dZ6rOut_kwRzTW813G2eOVhwsfCw.webp"
+    },
+    "훠궈": {
+        "가격": "28,000원",
+        "인기도": "5",
+        "사진": "https://i.namu.wiki/i/jxXgJ4KplKHmYSQ4sKNVhqVtfCFNJav3oDsC4JVDk93o9EMKHQ7cZP8o-VuZzVkx-lzBv7kSMtnFABmQevJsZ_Ulu62oDVkcdZYPoW-iBE-DlpJ5lPPeKaW3kvd6rJmYnTaeb3hxaXeRzE-p1cybWQ.webp"
+    },
+    "닭발" : {
+        "가격": "25,000",
+        "인기도": "3",
+        "사진": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Dakbal-bokkeum.jpg/220px-Dakbal-bokkeum.jpg"
+    },
+    "보쌈": {
+        "가격": "30,000원",
+        "인기도": "4",
+        "사진": "https://i.namu.wiki/i/TYu-4FdyNUSCVwkzh1P_9OejmaVQxgCYLmqxU4wMpfbItZaJkK1LIHDBlVDHeo_5zNYBUmIy0kU_05KwAyWvTJUvyh4CBnMZJdmikDjQYdZkX5Yc8Szqxca-tuxxDKN-FdI-tfobsgr5fg6wmIn-ow.webp"
+    },
+    "낚곱새" : {
+        "가격": "25,000",
+        "인기도": "4",
+        "사진": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnGc6DnscUio_4r2kkoUF481rTdUR8HVtXtg&usqp=CAU"
+    },
+    "장어구이" : {
+        "가격": "35,000",
+        "인기도": "3",
+        "사진": "https://i.namu.wiki/i/uNta4ytPWPpG05GqRvslGAFvJ71j-IKgIeWkVEACZ9hy0188ViaTIzg3ux4lZ-_7KKQjt55w6uHmThUS3BetTc3ay3F9x5lyraP7kLrQIjZzKKbxrlV6Ka1pREg2WjUDZtDCBtqG7w-_iXbUJqJuMg.webp"
+    },
+    "회": {
+        "가격": "30,000원",
+        "인기도": "5",
+        "사진": "https://i.namu.wiki/i/vn6DxStB8wVDTwSU7uivLOQPwa3LsWEpDpEdGFDuhixR1nInaOZ-cMHFapftUYjwj2z-UNhjWqT5W9uzgRedXSyea17q2Q4VvnIikDcBoLHJOtjNquz-S5FUl-iTAIh4CSrqnFOdpE9k_frdgCqJtg.webp"
+    },
+    "월남쌈" : {
+        "가격": "20,000",
+        "인기도": "5",
+        "사진": "https://i.namu.wiki/i/Lw5k2WiKVozQjE5D-yTNa5NUNuHqjA2vJ9uhO6gteAYQc1dzQiX8MHWJL6lJWiUoQZ5x-ZHfza8u5Ane2q2VWkpkdM9K8llA4T3jmXEFt1O_KNp1IjsjIiJ1JSGUXlhpUcReWbckL6g7K98w90qwqg.webp"
+    },
+    "조개구이" : {
+        "가격": "50,000",
+        "인기도": "4",
+        "사진": "https://mp-seoul-image-production-s3.mangoplate.com/1294921_1656287667027864.jpg?fit=around|738:738&crop=738:738;*,*&output-format=jpg&output-quality=80"
+    },
+    "초밥": {
+        "가격": "30,000원",
+        "인기도": "5",
+        "사진": "https://i.namu.wiki/i/nXbySh4e5Mo_Dq728c6OgaradwodK3gFeDH4OSkuvE-oldCHdAWnbgyD2O3cHRo2OPAHDnZd6On1oiBOs9EV-yF0xQ_4ZgTLjTfioEkXUjzq30VyOrDzKa06Sq_u9sTNOkd3ZoffSlexco05fHi9PA.webp"
+    },
+    "똠양꿍" : {
+        "가격": "20,000",
+        "인기도": "3",
+        "사진": "https://i.namu.wiki/i/Aifn0hxJrINM0OIPLEvjxiZBB-6lSpQU1gwjYODTps2CVvMMuLsAn2FvDUWOLEplDxOPYLV_XPVnOLSHoV1zdWrpLuGOwo-hVLPeg_LLAmRJRmknr7mzELzlsu6DnuH3lat_1XvPiPY744YpnapLqg.webp"
+    },
+    "갈비찜": {
+        "가격": "35,000원",
+        "인기도": "4",
+        "사진": "https://i.namu.wiki/i/u36EGx_dfzOF5zTubUysyZT_zfp9kcio_msOK_xJi8iK2aJcA6PpCz2d4bwp-wCkTT70N1uPmJOhUBqgKEAn3ySPKufCfFs3qSigu7yX3R_v853Wc8wEFaCut_NeQfBC9d5-_0UFkFDBOD-Nnh7yPA.webp"
+    },
+    "양념게장 or 간장게장" : {
+        "가격": "30,000",
+        "인기도": "4",
+        "사진": "https://i.namu.wiki/i/1Nwgp0Yuwwy3wI9MSxeGX1tG1WkeF0xebGzI4t5KiM_NpeMjeK_oOvGtreDw-bxbKAJkRRzmNGM2beOVymlAAdaStxQxEjczK5D3gEtxef-vK6QGDl9x0W1nUe5_P5K8vJKBA8kyE5F6HDeWSVP1hg.webp"
+    }
 }
-  
