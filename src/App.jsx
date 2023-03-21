@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import logo from './images/considering.webp';
 import defaultImg from './images/riceJokeBear.png';
 import loading from './images/loading.gif';
 import Clock from './components/Clock';
@@ -8,6 +7,7 @@ import top69Menus from './datas/top69Menus.json';
 import MenuOption from './components/MenuOption';
 import Sidebar from './components/Sidebar';
 import Main from './components/Main';
+import Considering from './components/Considering';
 
 function App() {
     const [selectedMode, setSelectedMode] = useState('선택된 모드가 없습니다');
@@ -152,22 +152,10 @@ function App() {
                         <MenuOption handleModeSelect={handleModeSelect} />
                     </div>
                     <div className='flex flex-col justify-center items-center w-full h-[60%] gap-4 max-w-screen-lg xl:max-w-screen-2xl'>
-                        <div className='px-12'>
-                            {selectedMode !== '선택된 모드가 없습니다' ? (
-                                <img
-                                    className='rounded-2xl w-72 h-42 max-w-lg cursor-help'
-                                    src={logo}
-                                    alt='considering...'
-                                    onClick={handleRandomMenu}
-                                ></img>
-                            ) : (
-                                <img
-                                    className='rounded-2xl w-72 h-42 max-w-lg'
-                                    src={logo}
-                                    alt='considering...'
-                                ></img>
-                            )}
-                        </div>
+                        <Considering
+                            selectedMode={selectedMode}
+                            handleRandomMenu={handleRandomMenu}
+                        />
                         <Main
                             isDarkMode={isDarkMode}
                             selectedMode={selectedMode}
