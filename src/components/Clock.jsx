@@ -15,7 +15,7 @@ function Clock() {
   }
 
   return (
-    <div className='text-right text-gray-500 pr-4'>
+    <div className='text-right px-4'>
       <span className=' text-xs'>{date.toLocaleTimeString().slice(2)}</span>
     </div>
   );

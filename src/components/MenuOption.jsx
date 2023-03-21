@@ -3,7 +3,7 @@ import React from 'react';
 export default function MenuOption({ handleModeSelect }) {
     
     return (
-        <div className='pb-8'>
+        <div className='pb-4'>
             <select onChange={handleModeSelect} id='menu-select' className='cursor-pointer'>
                 <option value='선택된 모드가 없습니다'>
                     {' '}
