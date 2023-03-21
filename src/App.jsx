@@ -109,7 +109,7 @@ function App() {
     return (
         <div className={`flex flex-col items-center w-full h-[100vh] ${isDarkMode? 'bg-gray-400' : 'white'}`}>
             <div className={`w-full flex justify-between items-end max-w-screen-lg xl:max-w-screen-2xl pr-4 py-2 ${isDarkMode? 'bg-gray-600' : 'bg-blue-400'} `}>
-                <h1 className={`${isDarkMode? 'text-white' : 'text-black'} pl-4 onClick={reloadPage}`}>
+                <h1 className={`${isDarkMode? 'text-white' : 'text-black'} pl-4 cursor-pointer`} onClick={reloadPage}>
                     Dr.JJ's Random Menu
                 </h1>
                 <Sidebar isDarkMode={isDarkMode} handleToggleClick={handleToggleClick} />
