@@ -108,7 +108,7 @@ function App() {
     return (
         <>
             <div
-                className={`flex flex-col items-center w-full h-[100vh] ${
+                className={`flex flex-col items-center w-full h-screen ${
                     isDarkMode ? 'bg-gray-400' : 'white'
                 }`}
             >
@@ -118,9 +118,7 @@ function App() {
                     } `}
                 >
                     <h1
-                        className={`${
-                            isDarkMode ? 'text-white' : 'text-white'
-                        } pl-4 cursor-pointer`}
+                        className={`pl-4 cursor-pointer text-white`}
                         onClick={reloadPage}
                     >
                         Dr.JJ's Random Menu
@@ -131,13 +129,7 @@ function App() {
                     />
                 </div>
                 <div className=' w-full max-w-screen-lg xl:max-w-screen-2xl'>
-                    <div
-                        className={`${
-                            isDarkMode ? 'text-white' : 'text-black'
-                        } mx-auto max-w-screen-lg w-full xl:max-w-screen-2xl`}
-                    >
-                        <Clock />
-                    </div>
+                        <Clock isDarkMode={isDarkMode} />
                     <div className='mx-auto text-right pr-4 text-sm max-w-screen-lg xl:max-w-screen-2xl'>
                         <p
                             className={`${

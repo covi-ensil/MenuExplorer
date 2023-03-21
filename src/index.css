@@ -4,22 +4,27 @@
 @tailwind components;
 @tailwind utilities;
 
-.test{
+.test {
     height: 300px;
 }
 
-.title{
+.title {
     text-align: center;
     color: chocolate;
     font-size: larger;
     font-weight: bold;
 }
 
-.코비{
+.코비 {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
     width: 288px;
     max-width: 324px;
+}
+
+.considering {
+    cursor: url('https://cdn.icon-icons.com/icons2/39/PNG/32/search_locate_find_6278.png'),
+        auto;
 }
