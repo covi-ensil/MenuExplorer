@@ -44,7 +44,7 @@ const Main = ({ selectedMode, selectedMenu, menuImg, handleRandomMenu, isDarkMod
                             />
                         ) : (
                             <img
-                                className='mx-auto pt-4 w-72 h-52 max-w-xs max-h-52 rounded-lg rounded-t-3xl'
+                                className='mx-auto w-72 h-60 max-w-xs max-h-60 rounded-lg rounded-t-3xl'
                                 src={menuImg}
                                 alt='menuImg'
                             />
@@ -72,7 +72,7 @@ const Main = ({ selectedMode, selectedMenu, menuImg, handleRandomMenu, isDarkMod
                             />
                         ) : (
                             <img
-                                className='mx-auto pt-4 w-72 h-52 max-w-xs max-h-52 rounded-lg rounded-t-3xl'
+                                className='mx-auto w-72 h-60 max-w-xs max-h-60 rounded-lg rounded-t-3xl'
                                 src={menuImg}
                                 alt='menuImg'
                             />
