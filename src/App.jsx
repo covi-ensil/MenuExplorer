@@ -141,7 +141,7 @@ function App() {
                         </p>
                     </div>
                     <div className='flex flex-col justify-center items-center w-full py-10'>
-                        <MenuOption handleModeSelect={handleModeSelect} />
+                        <MenuOption handleModeSelect={handleModeSelect} isDarkMode={isDarkMode} />
                     </div>
                     <div className='flex flex-col justify-center items-center w-full h-[60%] gap-4 max-w-screen-lg xl:max-w-screen-2xl'>
                         <Considering

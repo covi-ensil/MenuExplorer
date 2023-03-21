@@ -32,7 +32,7 @@ const Main = ({ selectedMode, selectedMenu, menuImg, handleRandomMenu, isDarkMod
                         </button>
                     </span>
                     <div className='content'>
-                        <div className={`${isDarkMode? 'text-white' : 'text-black'} text-center py-2`}>{`✨ ${selectedMenu} ✨`}</div>
+                        <div className={`${isDarkMode? 'text-white' : 'text-black'} text-center py-4`}>{`✨ ${selectedMenu} ✨`}</div>
                         {menuImg === defaultImg ? (
                             <img
                                 className='mx-auto w-[17rem] h-60 max-w-xs rounded-lg'
@@ -60,7 +60,7 @@ const Main = ({ selectedMode, selectedMenu, menuImg, handleRandomMenu, isDarkMod
                     </span>
 
                     <div className='content'>
-                        <div className={`${isDarkMode? 'text-white' : 'text-black'} text-center  py-2`}>{`✨ ${selectedMenu} ✨`}</div>
+                        <div className={`${isDarkMode? 'text-white' : 'text-black'} text-center  py-4`}>{`✨ ${selectedMenu} ✨`}</div>
                         {menuImg === defaultImg ? (
                             <img
                                 className='mx-auto w-[17rem] h-60 max-w-xs rounded-lg'
