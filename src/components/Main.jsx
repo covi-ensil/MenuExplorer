@@ -38,13 +38,13 @@ const Main = ({ selectedMode, selectedMenu, menuImg, handleRandomMenu, isDarkMod
                         <div className={`${isDarkMode? 'text-white' : 'text-black'} text-center py-2`}>{`✨ ${selectedMenu} ✨`}</div>
                         {menuImg === defaultImg ? (
                             <img
-                                className='mx-auto w-56 h-60 max-w-xs rounded-lg'
+                                className='mx-auto w-[17rem] h-60 max-w-xs rounded-lg'
                                 src={menuImg}
                                 alt='menuImg'
                             />
                         ) : (
                             <img
-                                className='mx-auto w-72 h-60 max-w-xs max-h-60 rounded-lg rounded-t-3xl'
+                                className='mx-auto w-[17rem] h-60 max-w-xs max-h-60 rounded-lg rounded-t-3xl'
                                 src={menuImg}
                                 alt='menuImg'
                             />
@@ -66,13 +66,13 @@ const Main = ({ selectedMode, selectedMenu, menuImg, handleRandomMenu, isDarkMod
                         <div className={`${isDarkMode? 'text-white' : 'text-black'} text-center  py-2`}>{`✨ ${selectedMenu} ✨`}</div>
                         {menuImg === defaultImg ? (
                             <img
-                                className='mx-auto w-56 h-60 max-w-xs rounded-lg'
+                                className='mx-auto w-[17rem] h-60 max-w-xs rounded-lg'
                                 src={menuImg}
                                 alt='menuImg'
                             />
                         ) : (
                             <img
-                                className='mx-auto w-72 h-60 max-w-xs max-h-60 rounded-lg rounded-t-3xl'
+                                className='mx-auto w-[17rem] h-60 max-w-xs max-h-60 rounded-lg rounded-t-3xl'
                                 src={menuImg}
                                 alt='menuImg'
                             />
