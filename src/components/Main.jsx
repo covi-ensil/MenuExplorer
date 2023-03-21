@@ -18,14 +18,14 @@ const Main = ({ selectedMode, selectedMenu, menuImg, handleRandomMenu, isDarkMod
         <div>
             {selectedMode === '선택된 모드가 없습니다' ? (
                 <div className='flex flex-col'>
-                    <span className={`${isDarkMode? 'text-indigo-500' : 'text-blue-500'} text-center pb-2`}>
+                    <span className={`${isDarkMode? 'text-white' : 'text-blue-500'} text-center text-lg font-semibold`}>
                         선택된 모드가 없습니다
                     </span>
-                    <div className={`${isDarkMode? 'text-white' : 'text-black'} text-center`}> 🥺 모드를 선택해 주세요 🥺 </div>
+                    <div className={`${isDarkMode? 'text-white' : 'text-black'} text-center py-4`}> 🥺 모드를 선택해 주세요 🥺 </div>
                 </div>
             ) : selectedMode === '🕊️' ? (
                 <div className='flex flex-col w-full'>
-                    <span className={`${isDarkMode? 'text-indigo-500' : 'text-blue-500'} text-center `}>
+                    <span className={`${isDarkMode? 'text-white' : 'text-blue-500'} text-center text-lg font-semibold`}>
                         오늘의 쫑이 메뉴는?
                         <button onClick={handleRandomMenu} style={btnStyle}>
                             <FcSearch className='searchButton w-6 h-6' />
@@ -52,7 +52,7 @@ const Main = ({ selectedMode, selectedMenu, menuImg, handleRandomMenu, isDarkMod
                 </div>
             ) : (
                 <div className='flex flex-col w-full'>
-                    <span className={`${isDarkMode? 'text-indigo-500' : 'text-blue-500'} text-center `}>
+                    <span className={`${isDarkMode? 'text-white' : 'text-blue-500'} text-center text-lg font-semibold`}>
                         오늘의 저녁 인기 메뉴는?
                         <button onClick={handleRandomMenu} style={btnStyle}>
                             <FcSearch className='w-6 h-6' />
