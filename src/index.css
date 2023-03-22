@@ -25,8 +25,7 @@
 }
 
 .considering {
-    cursor: url('./images/search_32.png'),
-        auto;
+    cursor: url('./images/search32.png'), help;
 }
 
 /* select {

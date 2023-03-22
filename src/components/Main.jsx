@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { FcSearch } from 'react-icons/fc';
+import searchImg from '../images/search24.png'
 import defaultImg from '../images/riceJokeBear.png';
+// import { FcSearch } from 'react-icons/fc';
 
 const Main = ({ selectedMode, selectedMenu, menuImg, handleRandomMenu, isDarkMode }) => {
     const btnStyle = {
@@ -25,11 +26,9 @@ const Main = ({ selectedMode, selectedMenu, menuImg, handleRandomMenu, isDarkMod
                 </div>
             ) : selectedMode === '🕊️' ? (
                 <div className='flex flex-col w-full'>
-                    <span className={`${isDarkMode? 'text-white' : 'text-blue-500'} text-center text-lg font-semibold`}>
+                    <span className={`${isDarkMode? 'text-gray-700' : 'text-blue-500'} text-center text-lg font-semibold`}>
                         오늘의 쫑이 메뉴는?
-                        <button onClick={handleRandomMenu} style={btnStyle}>
-                            <FcSearch className='searchButton w-6 h-6' />
-                        </button>
+                        <img src={searchImg} style={btnStyle} className=' inline-block w-6 h-6 cursor-pointer' onClick={handleRandomMenu} alt="searchImg"/>
                     </span>
                     <div className='content'>
                         <div className={`${isDarkMode? 'text-white' : 'text-black'} text-center py-4`}>{`✨ ${selectedMenu} ✨`}</div>
@@ -51,13 +50,13 @@ const Main = ({ selectedMode, selectedMenu, menuImg, handleRandomMenu, isDarkMod
                     </div>
                 </div>
             ) : (
-                <div className='flex flex-col w-full'>
-                    <span className={`${isDarkMode? 'text-white' : 'text-blue-500'} text-center text-lg font-semibold`}>
+                <div className='flex flex-col w-full h-full'>
+                    <span className={`   ${isDarkMode? 'text-gray-700' : 'text-blue-500'} text-center text-lg font-semibold`}>
                         오늘의 저녁 인기 메뉴는?
-                        <button onClick={handleRandomMenu} style={btnStyle}>
-                            <FcSearch className='w-6 h-6' />
-                        </button>
+                        {/* <button onClick={handleRandomMenu} style={btnStyle}> */}
+                            <img src={searchImg} style={btnStyle} className=' inline-block w-6 h-6 cursor-pointer' onClick={handleRandomMenu} alt="searchImg"/>
                     </span>
+                    
 
                     <div className='content'>
                         <div className={`${isDarkMode? 'text-white' : 'text-black'} text-center  py-4`}>{`✨ ${selectedMenu} ✨`}</div>
