@@ -13,7 +13,7 @@ const Considering = ({ selectedMode, handleRandomMenu }) => {
                 ></img>
             ) : (
                 <img
-                    className='rounded-2xl w-72 h-42 max-w-lg'
+                    className='rounded-2xl w-72 h-42 max-w-lg cursor-not-allowed'
                     src={logo}
                     alt='considering...'
                 ></img>
