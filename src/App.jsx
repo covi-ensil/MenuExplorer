@@ -8,6 +8,7 @@ import MenuOption from './components/MenuOption';
 import Sidebar from './components/Sidebar';
 import Main from './components/Main';
 import Considering from './components/Considering';
+import video from './images/considering.mp4';
 
 function App() {
     const [selectedMode, setSelectedMode] = useState('선택된 모드가 없습니다');
@@ -129,7 +130,7 @@ function App() {
                     />
                 </div>
                 <div className=' w-full max-w-screen-lg xl:max-w-screen-2xl'>
-                        <Clock isDarkMode={isDarkMode} />
+                    <Clock isDarkMode={isDarkMode} />
                     <div className='mx-auto text-right pr-4 text-sm max-w-screen-lg xl:max-w-screen-2xl'>
                         <p
                             className={`${
@@ -141,7 +142,10 @@ function App() {
                         </p>
                     </div>
                     <div className='flex flex-col justify-center items-center w-full pt-4 pb-4'>
-                        <MenuOption handleModeSelect={handleModeSelect} isDarkMode={isDarkMode} />
+                        <MenuOption
+                            handleModeSelect={handleModeSelect}
+                            isDarkMode={isDarkMode}
+                        />
                     </div>
                     <div className='flex flex-col justify-center items-center w-full h-[60%] gap-4 max-w-screen-lg xl:max-w-screen-2xl py-4'>
                         <Considering

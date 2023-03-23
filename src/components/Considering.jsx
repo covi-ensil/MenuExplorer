@@ -1,22 +1,47 @@
-import React from 'react';
-import logo from '../images/considering.webp';
+import React, { useEffect, useRef } from 'react';
+import logo from '../images/considering.mp4';
 
 const Considering = ({ selectedMode, handleRandomMenu }) => {
+    const videoRef = useRef(null);
+
+    useEffect(() => {
+        const video = videoRef.current;
+        const playPromise = video.play();
+
+        if (playPromise !== undefined) {
+            playPromise
+                .then(() => {
+                    // 비디오 재생이 성공적으로 시작됨
+                })
+                .catch((err) => {
+                    // 비디오 재생이 실패함
+                    window.alert(err);
+                });
+        }
+    }, []);
+
     return (
         <div className='py-4'>
             {selectedMode !== '선택된 모드가 없습니다' ? (
-                <img
-                    className='rounded-2xl w-72 h-42 max-w-lg considering'
+                <video
+                    ref={videoRef}
                     src={logo}
+                    autoPlay
+                    muted
+                    loop
+                    className='rounded-2xl w-72 h-42 max-w-lg considering'
                     alt='considering...'
                     onClick={handleRandomMenu}
-                ></img>
+                />
             ) : (
-                <img
-                    className='rounded-2xl w-72 h-42 max-w-lg cursor-not-allowed'
+                <video
+                    ref={videoRef}
                     src={logo}
-                    alt='considering...'
-                ></img>
+                    autoPlay
+                    muted
+                    loop
+                    className='rounded-2xl w-72 h-42 max-w-lg cursor-not-allowed'
+                />
             )}
         </div>
     );
