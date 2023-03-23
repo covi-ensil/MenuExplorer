@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function MenuOption({ isDarkMode, handleModeSelect }) {
     return (
-        <div className='pb-4'>
+        <div className=''>
             <select
                 onChange={handleModeSelect}
                 id='menu-select'

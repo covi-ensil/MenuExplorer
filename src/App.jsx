@@ -108,7 +108,7 @@ function App() {
     return (
         <>
             <div
-                className={`flex flex-col items-center w-full h-screen ${
+                className={`flex flex-col items-center w-full  min-h-[100vh] max-h-[150vh] ${
                     isDarkMode ? 'bg-gray-400' : 'white'
                 }`}
             >
@@ -140,10 +140,10 @@ function App() {
                             🕹️ : {selectedMode}
                         </p>
                     </div>
-                    <div className='flex flex-col justify-center items-center w-full pt-4 pb-10'>
+                    <div className='flex flex-col justify-center items-center w-full pt-4 pb-4'>
                         <MenuOption handleModeSelect={handleModeSelect} isDarkMode={isDarkMode} />
                     </div>
-                    <div className='flex flex-col justify-center items-center w-full h-[60%] gap-4 max-w-screen-lg xl:max-w-screen-2xl'>
+                    <div className='flex flex-col justify-center items-center w-full h-[60%] gap-4 max-w-screen-lg xl:max-w-screen-2xl py-4'>
                         <Considering
                             selectedMode={selectedMode}
                             handleRandomMenu={handleRandomMenu}

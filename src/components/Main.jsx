@@ -33,17 +33,21 @@ const Main = ({ selectedMode, selectedMenu, menuImg, handleRandomMenu, isDarkMod
                     <div className='content'>
                         <div className={`${isDarkMode? 'text-white' : 'text-black'} text-center py-4`}>{`✨ ${selectedMenu} ✨`}</div>
                         {menuImg === defaultImg ? (
+                            <div className='py-4'>
                             <img
-                                className='mx-auto w-[17rem] h-60 max-w-xs rounded-lg'
+                                className='mx-auto w-[17rem] h-60 max-w-xs rounded-lg' 
                                 src={menuImg}
                                 alt='menuImg'
                             />
+                            </div>
                         ) : (
+                            <div className='py-4'>
                             <img
                                 className='mx-auto w-[17rem] h-60 max-w-xs max-h-60 rounded-lg rounded-t-3xl'
                                 src={menuImg}
                                 alt='menuImg'
                             />
+                            </div>
                         )}
                         {/* <div className='text-center'>{`✨ 가격 : ${price} ✨`}</div>
                         <div className='text-center'>{`✨ 인기도 : ${popularity} ✨`}</div> */}
@@ -61,17 +65,21 @@ const Main = ({ selectedMode, selectedMenu, menuImg, handleRandomMenu, isDarkMod
                     <div className='content'>
                         <div className={`${isDarkMode? 'text-white' : 'text-black'} text-center  py-4`}>{`✨ ${selectedMenu} ✨`}</div>
                         {menuImg === defaultImg ? (
+                            <div className='py-4'>
                             <img
-                                className='mx-auto w-[17rem] h-60 max-w-xs rounded-lg'
+                                className='mx-auto w-[17rem] h-60 max-w-xs rounded-lg' 
                                 src={menuImg}
                                 alt='menuImg'
                             />
+                            </div>
                         ) : (
+                            <div className='py-4'>
                             <img
                                 className='mx-auto w-[17rem] h-60 max-w-xs max-h-60 rounded-lg rounded-t-3xl'
                                 src={menuImg}
                                 alt='menuImg'
                             />
+                            </div>
                         )}
                         {/* <div className='text-center'>{`✨ 가격 : ${price} ✨`}</div>
                         <div className='text-center'>{`✨ 인기도 : ${popularity} ✨`}</div> */}
