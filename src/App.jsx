@@ -147,7 +147,7 @@ function App() {
                             isDarkMode={isDarkMode}
                         />
                     </div>
-                    <div className='flex flex-col justify-center items-center w-full h-[60%] gap-4 max-w-screen-lg xl:max-w-screen-2xl py-4'>
+                    <div className='flex flex-col justify-center items-center w-full h-[60%] max-w-screen-lg xl:max-w-screen-2xl '>
                         <Considering
                             selectedMode={selectedMode}
                             handleRandomMenu={handleRandomMenu}

@@ -33,7 +33,7 @@ const Main = ({ selectedMode, selectedMenu, menuImg, handleRandomMenu, isDarkMod
                     <div className='content'>
                         <div className={`${isDarkMode? 'text-white' : 'text-black'} text-center py-4`}>{`✨ ${selectedMenu} ✨`}</div>
                         {menuImg === defaultImg ? (
-                            <div className='py-4'>
+                            <div className='pb-4'>
                             <img
                                 className='mx-auto w-[17rem] h-60 max-w-xs rounded-lg' 
                                 src={menuImg}
@@ -41,7 +41,7 @@ const Main = ({ selectedMode, selectedMenu, menuImg, handleRandomMenu, isDarkMod
                             />
                             </div>
                         ) : (
-                            <div className='py-4'>
+                            <div className='pb-4'>
                             <img
                                 className='mx-auto w-[17rem] h-60 max-w-xs max-h-60 rounded-lg rounded-t-3xl'
                                 src={menuImg}
@@ -65,7 +65,7 @@ const Main = ({ selectedMode, selectedMenu, menuImg, handleRandomMenu, isDarkMod
                     <div className='content'>
                         <div className={`${isDarkMode? 'text-white' : 'text-black'} text-center  py-4`}>{`✨ ${selectedMenu} ✨`}</div>
                         {menuImg === defaultImg ? (
-                            <div className='py-4'>
+                            <div className='pb-4'>
                             <img
                                 className='mx-auto w-[17rem] h-60 max-w-xs rounded-lg' 
                                 src={menuImg}
@@ -73,7 +73,7 @@ const Main = ({ selectedMode, selectedMenu, menuImg, handleRandomMenu, isDarkMod
                             />
                             </div>
                         ) : (
-                            <div className='py-4'>
+                            <div className='pb-4'>
                             <img
                                 className='mx-auto w-[17rem] h-60 max-w-xs max-h-60 rounded-lg rounded-t-3xl'
                                 src={menuImg}
