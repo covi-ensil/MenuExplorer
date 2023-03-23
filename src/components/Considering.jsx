@@ -3,10 +3,11 @@ import logo from '../images/considering.mp4';
 
 const Considering = ({ selectedMode, handleRandomMenu }) => {
     const videoRef = useRef(null);
-
+    
     useEffect(() => {
         const video = videoRef.current;
         const playPromise = video.play();
+        videoRef.current.playsInline = true;
 
         if (playPromise !== undefined) {
             playPromise
