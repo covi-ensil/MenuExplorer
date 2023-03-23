@@ -16,7 +16,7 @@ const Considering = ({ selectedMode, handleRandomMenu }) => {
                 })
                 .catch((err) => {
                     // 비디오 재생이 실패함
-                    window.alert(err);
+                    // window.alert(err);
                 });
         }
     }, []);
