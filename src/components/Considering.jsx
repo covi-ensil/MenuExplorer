@@ -27,8 +27,10 @@ const Considering = ({ selectedMode, handleRandomMenu }) => {
                 <video
                     ref={videoRef}
                     src={logo}
-                    autoPlay
+                    playsInline
+                    webkit-playsinline
                     muted
+                    autoPlay
                     loop
                     className='rounded-2xl w-72 h-42 max-w-lg considering'
                     alt='considering...'
@@ -38,8 +40,10 @@ const Considering = ({ selectedMode, handleRandomMenu }) => {
                 <video
                     ref={videoRef}
                     src={logo}
-                    autoPlay
+                    playsInline
+                    webkit-playsinline
                     muted
+                    autoPlay
                     loop
                     className='rounded-2xl w-72 h-42 max-w-lg cursor-not-allowed'
                 />

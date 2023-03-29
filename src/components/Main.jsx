@@ -15,6 +15,18 @@ const Main = ({ selectedMode, selectedMenu, menuImg, handleRandomMenu, isDarkMod
         lineHeight: 1.5,
     };
 
+    // const handleClick = async () => {
+    //     try {
+    //       // 비동기 작업 실행
+    //       const result = await fetch('https://api.example.com/data');
+    //       // 비동기 작업이 완료된 후 실행되는 코드
+    //       console.log(result);
+    //     } catch (error) {
+    //       // 비동기 작업이 실패한 경우 실행되는 코드
+    //       console.error(error);
+    //     }
+    //   }
+
     return (
         <div>
             {selectedMode === '선택된 모드가 없습니다' ? (

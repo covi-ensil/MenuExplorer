@@ -36,17 +36,6 @@ function App() {
     // Refactor getRandomIndex to a one-liner function
     const getRandomIndex = (length) => parseInt(Math.random() * length);
 
-    const btnStyle = {
-        color: 'white',
-        background: 'white',
-        margin: '0px 3px',
-        padding: '',
-        border: '.5px solid teal',
-        borderRadius: '.25rem',
-        fontSize: '1rem',
-        lineHeight: 1.5,
-    };
-
     const handleRandomMenu = () => {
         let randomIndex, menuList;
         if (selectedMode === '🕊️') {

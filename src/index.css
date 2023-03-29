@@ -4,10 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.test {
-    height: 300px;
-}
-
 .title {
     text-align: center;
     color: chocolate;
@@ -20,7 +16,7 @@
     justify-content: center;
     align-items: center;
     margin: auto;
-    width: 288px;
+    width: 500px;
     max-width: 324px;
 }
 
