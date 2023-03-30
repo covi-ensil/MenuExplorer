@@ -28,7 +28,7 @@ const Considering = ({ selectedMode, handleRandomMenu }) => {
                     ref={videoRef}
                     src={logo}
                     playsInline
-                    webkit-playsinline
+                    webkit-playsinline="true"
                     muted
                     autoPlay
                     loop
@@ -41,7 +41,7 @@ const Considering = ({ selectedMode, handleRandomMenu }) => {
                     ref={videoRef}
                     src={logo}
                     playsInline
-                    webkit-playsinline
+                    webkit-playsinline="true"
                     muted
                     autoPlay
                     loop
