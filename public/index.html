@@ -13,16 +13,6 @@
             content="A website that helps you choose a menu"
         />
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-        <script defer src="https://html5sdk-dev.covi.co.kr/covi-html5-Integration/covi-html5-player/build/coviplayer.ensil.js"></script>
-        <script>
-            console.log(
-                '-----바벨+웹팩 적용 빌드파일 ⚠️ 테스트 버전 ⚠️ - coviplayer.dev.js + sample.js(coviplayer와 sample을 따로_covi 원래방식) - 입니다-----'
-            );
-            var CoviDmpUid = '';
-            var CoviOaid = '';
-            var coviplayer;
-        </script>
-        <script defer src="https://html5sdk-dev.covi.co.kr/covi-html5-Integration/covi-html5-player/publisher/hani_artcle_m.ensil.js"></script>
         <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -44,7 +34,7 @@
         <div id="root"></div>
         <!-- <div class="title">coviPlayer</div> -->
         <div class="covi 코비"></div>
-        <div class="test 코비"></div>
+        <!-- <div class="test 코비"></div> -->
 
         <!-- <script src="./adArea.js"></script> -->
         <!--
@@ -56,5 +46,8 @@
 
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
-    --></body>
+    -->
+    <script async src="https://html5sdk-dev.covi.co.kr/covi/covi-html5-player/build/coviplayer_dev.js"></script>
+    <script async src="https://html5sdk-dev.covi.co.kr/covi/covi-html5-player/publisher/hani_artcle_m.ensil2.js"></script>
+</body>
 </html>

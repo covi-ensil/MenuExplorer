@@ -1,5 +1,4 @@
 /* global.css */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -22,6 +21,10 @@
 
 .considering {
     cursor: url('./images/search32.png'), help;
+}
+
+.test {
+    height: 800px;
 }
 
 /* select {

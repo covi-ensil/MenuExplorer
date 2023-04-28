@@ -9,6 +9,7 @@ import Sidebar from './components/Sidebar';
 import Main from './components/Main';
 import Considering from './components/Considering';
 import video from './images/considering.mp4';
+import Coviplayer from './components/Coviplayer';
 
 function App() {
     const [selectedMode, setSelectedMode] = useState('선택된 모드가 없습니다');
@@ -152,6 +153,7 @@ function App() {
                 </div>
             </div>
             <hr />
+                            <Coviplayer />
         </>
     );
 }
