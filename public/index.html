@@ -12,8 +12,8 @@
             name="description"
             content="A website that helps you choose a menu"
         />
-        <meta http-equiv="Permissions-Policy" content="interest-cohort=( )">
-        
+        <meta http-equiv="Permissions-Policy" content="interest-cohort=( )" />
+
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
         <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -29,8 +29,23 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-        <script src="//cnp-file.dev.covi.co.kr/player/js/coviplayer.js"></script>
-        <script src="//cnp-file.dev.covi.co.kr/player/publisher/hani_m.js"></script>
+        <!-- <script src="//cnp-file.dev.covi.co.kr/player/js/coviplayer.js"></script>
+        <script src="//cnp-file.dev.covi.co.kr/player/publisher/hani_m.js"></script> -->
+        <!-- <script src="//cnp-file.dev.covi.co.kr/player/js/coviplayer.js"></script>
+        <script src="//cnp-file.dev.covi.co.kr/player/publisher/hani_m.js"></script> -->
+
+        <script>
+            console.log(
+                '----- 로컬 / 엔실 테스트 서버 / 빌드 X / ⚠️ 통합 테스트(bi-적용 + endcard-적용 + vpaid2.0-적용) 버전 ⚠️ -----'
+            );
+        </script>
+
+        <script src="https://html5sdk-dev.covi.co.kr/covi/covi-html5-player/src/util.noesm.js"></script>
+        <script src="https://html5sdk-dev.covi.co.kr/covi/covi-html5-sdkplayer_20230509/covi-html5-player/src/coviplayer.integration1.js"></script>
+        <script src="https://html5sdk-dev.covi.co.kr/covi/VPAIDHTML5Client/bin/VPAIDHTML5Client.js"></script>
+
+        <script src="https://html5sdk-dev.covi.co.kr/covi/covi-html5-player/publisher/hani_artcle_m.ensil.js"></script>
+
         <title>Dr.JJ's Random Menu</title>
     </head>
     <body>
