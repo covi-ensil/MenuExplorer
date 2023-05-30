@@ -3,6 +3,14 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+    margin: 0;
+}
+
+div{
+    padding: 0;
+}
+
 .title {
     text-align: center;
     color: chocolate;
@@ -10,14 +18,14 @@
     font-weight: bold;
 }
 
-.코비 {
+/* .코비 {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
     width: 500px;
     max-width: 324px;
-}
+} */
 
 .considering {
     cursor: url('./images/search32.png'), help;

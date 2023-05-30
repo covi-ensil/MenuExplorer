@@ -19,8 +19,8 @@ const Coviplayer = () => {
         <>
             <div className='covi 코비'></div>
             <div className='test 코비'></div>
-            <button className='clicker' onClick={() => setCount(c => c + 1)}>+</button>
-            <div>hello</div>
+            {/* <button className='clicker' onClick={() => setCount(c => c + 1)}>+</button>
+            <div>hello</div> */}
         </>
     );
 };
