@@ -3,13 +3,13 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+/* body{
     margin: 0;
 }
 
 div{
     padding: 0;
-}
+} */
 
 .title {
     text-align: center;
