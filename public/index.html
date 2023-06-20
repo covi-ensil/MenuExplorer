@@ -51,8 +51,17 @@
                 '----- 배포 / 엔실 테스트 서버 / 빌드 O / ⚠️ 통합 테스트(bi-적용 + endcard-적용 + vpaid2.0-적용) sdk + player 버전 ⚠️ -----'
             );
         </script>
-        <script src="https://cnp-file.dev.covi.co.kr/integration_sample/coviplayer_dev.js"></script>
-        <script src="https://cnp-file.dev.covi.co.kr/integration_sample/publisher_dev.js"></script>
+        <!-- 개발서버 테스트 -->
+        <!-- <script src="https://cnp-file.dev.covi.co.kr/integration_sample/coviplayer_dev.js"></script>
+        <script src="https://cnp-file.dev.covi.co.kr/integration_sample/publisher_dev.js"></script> -->
+
+        <!-- 상용서버테스트 -->
+        <!-- <script src="https://cnp-file.covi.co.kr/integration_sample/coviplayer_prod.js"></script>
+        <script src="https://cnp-file.covi.co.kr/integration_sample/publisher_prod.js"></script> -->
+
+        <script src="https://cnp-file.covi.co.kr/integration_sample/coviplayer_prod.js"></script>
+        <script src="https://cnp-file.covi.co.kr/integration_sample/qanda_web.js"></script>
+
         <!-- <script src="https://cnp-file.dev.covi.co.kr/integration_sample/publisher_dev.js"></script> -->
         <!-- <script src="https://html5sdk-dev.covi.co.kr/covi/covi-html5-sdkplayer_20230531/covi-html5-player/build/coviplayer_local.js"></script> -->
         <!-- <script src="https://html5sdk-dev.covi.co.kr/covi/covi-html5-player/publisher/hani_artcle_m.ensil.js"></script> -->
@@ -62,9 +71,28 @@
     <body>
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <div id="root"></div>
-        <!-- <div class="title">coviPlayer</div> -->
-        <!-- <div class="covi"></div> -->
-        <!-- <div class="test 코비"></div> -->
+        <div class="title"></div>
+        <div class="covi"></div>
+        <div class="test 코비"></div>
+
+        <!-- <div>
+            <video
+                class="covi_player"
+                controls
+                playsinline
+                controlsList="nodownload"
+            ></video>
+            <div class="additional_features">
+                <button type="button" onclick="coviClickLandingButton();">
+                    더 알아보기
+                </button>
+                <button type="button" onclick="initCoviSdk();">
+                    다른 광고 재생
+                </button>
+            </div>
+        </div> -->
+
+        <div style="height: 700px"></div>
 
         <!-- <script src="./adArea.js"></script> -->
         <!--
