@@ -94,7 +94,7 @@ function App() {
         <>
             <div className="flex flex-col items-center border border-gray-200">
                 <div
-                    className={`flex flex-col items-center w-[36rem] min-h-[100vh] max-h-[150vh] border border-gray-200 ${
+                    className={`flex flex-col items-center w-full lg:w-[36rem] min-h-[100vh] max-h-[150vh] border border-gray-200 ${
                         isDarkMode ? 'bg-gray-400' : 'white'
                     }`}
                 >
