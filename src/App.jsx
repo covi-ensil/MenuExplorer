@@ -48,12 +48,8 @@ function App() {
 
             setSelectedMenu(menuList[randomIndex]);
 
-            const priceList = Object.values(jjongjjongMenus).map(
-                (el) => el.가격
-            );
-            const poplarityList = Object.values(jjongjjongMenus).map(
-                (el) => el.인기도
-            );
+            const priceList = Object.values(jjongjjongMenus).map((el) => el.가격);
+            const poplarityList = Object.values(jjongjjongMenus).map((el) => el.인기도);
             const imgList = Object.values(jjongjjongMenus).map((el) => el.사진);
             // console.log(imgList[randomIndex])
             setPrice(priceList[randomIndex]);
@@ -70,9 +66,7 @@ function App() {
             setSelectedMenu(menuList[randomIndex]);
 
             const priceList = Object.values(top69Menus).map((el) => el.가격);
-            const poplarityList = Object.values(top69Menus).map(
-                (el) => el.인기도
-            );
+            const poplarityList = Object.values(top69Menus).map((el) => el.인기도);
             const imgList = Object.values(top69Menus).map((el) => el.사진);
             // console.log(imgList[randomIndex])
             setPrice(priceList[randomIndex]);
@@ -98,62 +92,45 @@ function App() {
 
     return (
         <>
-            <div
-                className={`flex flex-col items-center w-full  min-h-[100vh] max-h-[150vh] ${
-                    isDarkMode ? 'bg-gray-400' : 'white'
-                }`}
-            >
+            <div className="flex flex-col items-center border border-gray-200">
                 <div
-                    className={`w-full flex justify-between items-end max-w-screen-lg xl:max-w-screen-2xl pr-4 py-2 ${
-                        isDarkMode ? 'bg-gray-600' : 'bg-blue-400'
-                    } `}
+                    className={`flex flex-col items-center w-[36rem] min-h-[100vh] max-h-[150vh] border border-gray-200 ${
+                        isDarkMode ? 'bg-gray-400' : 'white'
+                    }`}
                 >
-                    <h1
-                        className={`pl-4 cursor-pointer text-white`}
-                        onClick={reloadPage}
+                    <div
+                        className={`w-full flex justify-between items-end max-w-screen-lg xl:max-w-screen-2xl pr-4 py-2 ${
+                            isDarkMode ? 'bg-gray-600' : 'bg-blue-400'
+                        } `}
                     >
-                        Dr.JJ's Random Menu
-                    </h1>
-                    <Sidebar
-                        isDarkMode={isDarkMode}
-                        handleToggleClick={handleToggleClick}
-                    />
-                </div>
-                <div className=' w-full max-w-screen-lg xl:max-w-screen-2xl'>
-                    <Clock isDarkMode={isDarkMode} />
-                    <div className='mx-auto text-right pr-4 text-sm max-w-screen-lg xl:max-w-screen-2xl'>
-                        <p
-                            className={`${
-                                isDarkMode ? 'text-white' : 'text-black'
-                            } py-1`}
-                        >
-                            {' '}
-                            🕹️ : {selectedMode}
-                        </p>
+                        <h1 className={`pl-4 cursor-pointer text-white`} onClick={reloadPage}>
+                            Dr.JJ's Random Menu
+                        </h1>
+                        <Sidebar isDarkMode={isDarkMode} handleToggleClick={handleToggleClick} />
                     </div>
-                    <div className='flex flex-col justify-center items-center w-full pt-4 pb-4'>
-                        <MenuOption
-                            handleModeSelect={handleModeSelect}
-                            isDarkMode={isDarkMode}
-                        />
-                    </div>
-                    <div className='flex flex-col justify-center items-center w-full h-[60%] max-w-screen-lg xl:max-w-screen-2xl '>
-                        <Considering
-                            selectedMode={selectedMode}
-                            handleRandomMenu={handleRandomMenu}
-                        />
-                        <Main
-                            isDarkMode={isDarkMode}
-                            selectedMode={selectedMode}
-                            selectedMenu={selectedMenu}
-                            menuImg={menuImg}
-                            handleRandomMenu={handleRandomMenu}
-                        />
+                    <div className=" w-full max-w-screen-lg xl:max-w-screen-2xl">
+                        <Clock isDarkMode={isDarkMode} />
+                        <div className="mx-auto text-right pr-4 text-sm max-w-screen-lg xl:max-w-screen-2xl">
+                            <p className={`${isDarkMode ? 'text-white' : 'text-black'} py-1`}> 🕹️ : {selectedMode}</p>
+                        </div>
+                        <div className="flex flex-col justify-center items-center w-full pt-4 pb-4">
+                            <MenuOption handleModeSelect={handleModeSelect} isDarkMode={isDarkMode} />
+                        </div>
+                        <div className="flex flex-col justify-center items-center w-full h-[60%] max-w-screen-lg xl:max-w-screen-2xl ">
+                            <Considering selectedMode={selectedMode} handleRandomMenu={handleRandomMenu} />
+                            <Main
+                                isDarkMode={isDarkMode}
+                                selectedMode={selectedMode}
+                                selectedMenu={selectedMenu}
+                                menuImg={menuImg}
+                                handleRandomMenu={handleRandomMenu}
+                            />
+                        </div>
                     </div>
                 </div>
+                <hr />
+                <Coviplayer />
             </div>
-            <hr />
-                            <Coviplayer />
         </>
     );
 }
